@@ -17,9 +17,9 @@
 		response.sendRedirect("login.jsp");
 }%>
 
-<h1>Välkommen! <%= session.getValue("username") %></h1>
-<h2>Bästa smeknamn till Redon?: <%if(session.getAttribute("nickname") == null){
-	out.print("This is where your fav nickname will show up");
+<h1>VÃ¤lkommen! <%= session.getValue("username") %></h1>
+<h2>Mina Smeknamn: <%if(session.getAttribute("nickname") == null){
+	out.print("This is where your nickname will show up");
 	}else{
 		out.print(session.getValue("nickname"));
 	}
@@ -30,7 +30,7 @@
 		<select name="nicknames">
 			<option>Red</option>
 			<option>Reggie</option>
-			<option>Shaqe</option>
+			<option>Shaqiri</option>
 		</select>
 		<input type="submit" value="submit">
 	</form>
