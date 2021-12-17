@@ -33,7 +33,7 @@ public class SessionServlet extends HttpServlet {
 			response.sendRedirect("login.jsp");
 		}else {
 			HttpSession session = request.getSession();
-			session.setMaxInactiveInterval(20);			
+			session.setMaxInactiveInterval(60);			
 			session.setAttribute("Checked-in", "true");
 			session.setAttribute("username", b.getName());
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
