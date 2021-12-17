@@ -3,7 +3,7 @@ package Model;
 public class Model {
 	
 	public static boolean checkLoginDetails(String uname, String pword) {
-		if((uname.equals("admin") && pword.equals("admin")) || (uname.equals("admin1") && pword.equals("admin1"))) {
+		if((uname.equals("Redon") && pword.equals("Redon")) || (uname.equals("Shaqiri") && pword.equals("Shaqiri"))) {
 			return true;
 		}else {
 			return false;
