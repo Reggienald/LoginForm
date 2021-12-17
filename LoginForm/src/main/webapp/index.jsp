@@ -19,7 +19,7 @@
 
 <h1>Välkommen! <%= session.getValue("username") %></h1>
 <h2>Mina Smeknamn: <%if(session.getAttribute("nickname") == null){
-	out.print("This is where your nickname will show up");
+	out.print("Smeknamn");
 	}else{
 		out.print(session.getValue("nickname"));
 	}
