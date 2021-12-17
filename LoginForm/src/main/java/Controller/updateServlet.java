@@ -10,9 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class updatedHomePage
- */
+
 @WebServlet("/updateServlet")
 public class updateServlet extends HttpServlet {
 
