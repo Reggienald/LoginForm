@@ -7,7 +7,7 @@ public class Bean {
 	
 	
 	public Bean(String name, String password) {
-		if(Model.checkLoginDetails(name, password)) {
+		if(Model.control(name, password)) {
 			this.name = name;
 			this.password = password;
 		}else {
